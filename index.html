@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./style.css">
+  <title>Data Gird Toggle View</title>
+</head>
+<body>
+
+  <div class="toggle-container">
+    <button id="toggleButton">Grid view || Table view</button>
+  </div>
+  
+  <div class="container table-view active">
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search...">
+      <button class="search-button">Search</button>
+    </div>
+    <div id="data-container"></div>  
+  </div>
+
+  <div class="container grid-view">
+    <table id="data-table1">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name <div>
+              <button id="ascendingButton">A</button>
+              <button id="descendingButton">D</button>
+            </div></th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody id="data-body1"></tbody>
+    </table>
+  </div>
+
+  <script src="./script.js"> </script>
+</body>
+</html>
